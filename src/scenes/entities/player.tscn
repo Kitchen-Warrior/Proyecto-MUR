@@ -218,7 +218,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qh5pu"]
-size = Vector2(21, 40.5)
+size = Vector2(23, 40)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_rds41")
@@ -227,12 +227,11 @@ script = ExtResource("1_rds41")
 position = Vector2(-1, 0)
 sprite_frames = SubResource("SpriteFrames_1hd0g")
 animation = &"moving"
-frame = 3
-frame_progress = 0.109005
+frame_progress = 0.00821876
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-5.5, 20.25)
+position = Vector2(-6.5, 20)
 shape = SubResource("RectangleShape2D_qh5pu")
 
 [node name="Camera2D" type="Camera2D" parent="."]
