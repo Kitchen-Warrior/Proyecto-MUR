@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://cf2knacs8sjl6"]
+[gd_scene load_steps=40 format=3 uid="uid://cf2knacs8sjl6"]
 
 [ext_resource type="Script" uid="uid://chkkbni6k3osb" path="res://src/scripts/entities/jugador.gd" id="1_q8iaw"]
 [ext_resource type="Texture2D" uid="uid://btawrcx7wviso" path="res://_assets/sprites/caballero/ATTACK 1.png" id="1_v1373"]
@@ -248,10 +248,14 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v1373"]
 size = Vector2(9, 28)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q8iaw"]
+size = Vector2(10, 23)
+
 [node name="JugadorPruebaMau" type="Node2D"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-collision_mask = 129
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." groups=["player"]]
+collision_layer = 65
+collision_mask = 193
 script = ExtResource("1_q8iaw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
@@ -263,5 +267,16 @@ autoplay = "idle"
 zoom = Vector2(3, 3)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(0.5, 4)
+position = Vector2(-1, 1)
 shape = SubResource("RectangleShape2D_v1373")
+
+[node name="HurtBox" type="Area2D" parent="CharacterBody2D"]
+unique_name_in_owner = true
+collision_layer = 193
+collision_mask = 64
+
+[node name="Hurtcol" type="CollisionShape2D" parent="CharacterBody2D/HurtBox"]
+unique_name_in_owner = true
+position = Vector2(-1, 1.5)
+shape = SubResource("RectangleShape2D_q8iaw")
+debug_color = Color(0.81492, 0.365575, 0.48065, 0.42)

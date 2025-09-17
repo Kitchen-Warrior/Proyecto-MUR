@@ -1,9 +1,12 @@
 extends CharacterBody2D
+
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
-var health: int = 3
+var health: int = 5
+
+
 
 func _physics_process(delta: float) -> void:
 	# Gravedad
@@ -36,22 +39,34 @@ func _physics_process(delta: float) -> void:
 	
 	# Movimiento + colisiones
 	move_and_slide()
+	
 	_check_spike_damage()
 
 
 ################### DAÑO ###################
 
+# Comprueba si caemos en pinchos
 func _check_spike_damage():
-	for i in get_slide_collision_count():
+	for i in range(get_slide_collision_count()):
 		var collision = get_slide_collision(i)
 		if collision.get_collider().name == "spikes":
-			take_damage()
+			die()
 
+
+# enemies damages
+func enemies_damage():
+	var overlapping_mobs = %HurtBox.get_overlapping_bodies()  #tiene en cuenta cuantos enemigos choco, cambiar
+	if overlapping_mobs:
+		take_damage()
+
+
+# Recibe la cantidad de daño y la aplica
 func take_damage() -> void:
 	health -= 1
 	print("Vida restante: ", health)
 	if health <= 0:
 		die()
+
 
 func die() -> void:
 	print("¡Game Over!")
