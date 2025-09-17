@@ -5,7 +5,8 @@ extends Node2D
 @onready var sprites_enemies: AnimatedSprite2D = $CharacterBody2D/sprites_enemies
 
 var damage_frames: Array = [3, 5]
-
+var damage_cooldown: float = 200
+var last_damage_time: float = 0.0
 
 
 
@@ -14,7 +15,11 @@ func _ready() -> void:
 	pass
 	
 func _process(delta: float) -> void:
-	pass
+	if sprites_enemies.animation == "atack" and sprites_enemies.frame in damage_frames:
+		ataques.monitoring = true
+		check_damage()  # Verificar daño continuamente
+	else:
+		ataques.monitoring = false
 	
 	
 
@@ -32,12 +37,22 @@ func _on_hitbox_body_entered(body: Node2D) -> void:
 
 
 func _on_ataques_body_entered(body: Node2D) -> void:
-	print("golpe de espada")
-	if sprites_enemies.animation == "atack":
-		if sprites_enemies.frame in damage_frames:
-			ataques.monitoring = true  # activa colisiones
+		if sprites_enemies.animation == "atack":
+			if sprites_enemies.frame in damage_frames:
+				ataques.monitoring = true  # activa colisiones
+				if ataques.monitoring == true and body.name == "jugador_mau":
+					body.take_damage()
+					last_damage_time = 0.0
 		else:
 			ataques.monitoring = false # desactiva colisiones.
-	if ataques.monitoring and body.name == "jugador_mau":
-		body.take_damage()
-			
+			ataques.monitoring = false 
+		
+func check_damage():
+	var current_time = Time.get_ticks_msec() / 1000.0
+	if current_time - last_damage_time >= damage_cooldown:
+		var bodies = ataques.get_overlapping_bodies()
+		for body in bodies:
+			if body.name == "jugador_mau":
+				body.take_damage()
+				last_damage_time = current_time
+				print("Daño continuo aplicado")
