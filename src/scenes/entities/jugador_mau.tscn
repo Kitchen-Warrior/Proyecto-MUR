@@ -246,37 +246,38 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v1373"]
-size = Vector2(9, 28)
+size = Vector2(9, 43)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q8iaw"]
-size = Vector2(10, 23)
+size = Vector2(10, 49.375)
 
-[node name="JugadorPruebaMau" type="Node2D"]
+[node name="jugador_mau" type="Node2D"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." groups=["player"]]
+[node name="jugador_mau" type="CharacterBody2D" parent="." groups=["player"]]
+unique_name_in_owner = true
 collision_layer = 65
 collision_mask = 193
 script = ExtResource("1_q8iaw")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="jugador_mau"]
 sprite_frames = SubResource("SpriteFrames_5i2i3")
 animation = &"jump"
 autoplay = "idle"
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+[node name="Camera2D" type="Camera2D" parent="jugador_mau"]
 zoom = Vector2(3, 3)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(-1, 1)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="jugador_mau"]
+position = Vector2(-1, -6.5)
 shape = SubResource("RectangleShape2D_v1373")
 
-[node name="HurtBox" type="Area2D" parent="CharacterBody2D"]
+[node name="HurtBox" type="Area2D" parent="jugador_mau"]
 unique_name_in_owner = true
 collision_layer = 193
 collision_mask = 64
 
-[node name="Hurtcol" type="CollisionShape2D" parent="CharacterBody2D/HurtBox"]
+[node name="Hurtcol" type="CollisionShape2D" parent="jugador_mau/HurtBox"]
 unique_name_in_owner = true
-position = Vector2(-1, 1.5)
+position = Vector2(0, -8)
 shape = SubResource("RectangleShape2D_q8iaw")
 debug_color = Color(0.81492, 0.365575, 0.48065, 0.42)
