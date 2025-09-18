@@ -1,8 +1,8 @@
-[gd_scene load_steps=14 format=4 uid="uid://c68nplhctfxi5"]
+[gd_scene load_steps=14 format=4 uid="uid://dif8mrk6pg6h1"]
 
 [ext_resource type="Texture2D" uid="uid://b60uxnuskko13" path="res://_assets/sprites/Dungeon Tile Set.png" id="1_2flkv"]
 [ext_resource type="Texture2D" uid="uid://jqehw46lffxm" path="res://_assets/sprites/fondo-nivel.png" id="2_c1wv6"]
-[ext_resource type="PackedScene" path="res://src/scenes/entities/jugador_mau.tscn" id="3_x0kx7"]
+[ext_resource type="PackedScene" uid="uid://6quo72gi5dls" path="res://src/scenes/entities/jugador_mau.tscn" id="3_x0kx7"]
 [ext_resource type="PackedScene" uid="uid://bsf3x4iccsisb" path="res://src/scenes/entities/enemies.tscn" id="4_mutya"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x0kx7"]
