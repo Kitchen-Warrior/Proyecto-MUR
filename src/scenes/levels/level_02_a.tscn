@@ -1,8 +1,8 @@
-[gd_scene load_steps=9 format=4 uid="uid://oeo7xyu30vjd"]
+[gd_scene load_steps=9 format=4 uid="uid://dnb22gx42ak5r"]
 
 [ext_resource type="Texture2D" uid="uid://jqehw46lffxm" path="res://_assets/sprites/fondo-nivel.png" id="1_jvl86"]
 [ext_resource type="Texture2D" uid="uid://b60uxnuskko13" path="res://_assets/sprites/Dungeon Tile Set.png" id="2_bow1j"]
-[ext_resource type="PackedScene" path="res://src/scenes/entities/jugador_mau.tscn" id="3_bow1j"]
+[ext_resource type="PackedScene" uid="uid://6quo72gi5dls" path="res://src/scenes/entities/jugador_mau.tscn" id="3_bow1j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6d6uh"]
 texture = ExtResource("1_jvl86")
@@ -3206,4 +3206,5 @@ tile_set = SubResource("TileSet_nit7b")
 [node name="ForeGround" type="TileMapLayer" parent="."]
 
 [node name="jugador_mau" parent="." instance=ExtResource("3_bow1j")]
-position = Vector2(49, 1007)
+position = Vector2(39, 1030)
+scale = Vector2(0.5, 0.5)
