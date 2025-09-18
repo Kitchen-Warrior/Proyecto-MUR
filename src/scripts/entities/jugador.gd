@@ -2,7 +2,11 @@ extends CharacterBody2D
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
+<<<<<<< HEAD
 const SPEED = 135.0
+=======
+const SPEED = 120.0
+>>>>>>> 0dd1e8cc208d61350bbe192d984da2e87a70ca66
 const JUMP_VELOCITY = -250.0
 var health: int = 5
 

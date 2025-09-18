@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=14 format=4 uid="uid://c48g82yeu1co6"]
+=======
+[gd_scene load_steps=13 format=4 uid="uid://dr5jodnlg6lq5"]
+>>>>>>> 0dd1e8cc208d61350bbe192d984da2e87a70ca66
 
 [ext_resource type="Texture2D" uid="uid://b60uxnuskko13" path="res://_assets/sprites/Dungeon Tile Set.png" id="1_sl4u1"]
 [ext_resource type="Texture2D" uid="uid://ccc3agiabrgo3" path="res://_assets/sprites/marble_packed.png" id="2_dkuuf"]

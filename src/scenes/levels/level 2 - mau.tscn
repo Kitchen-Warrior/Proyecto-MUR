@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 [gd_scene load_steps=14 format=4 uid="uid://cy4iola27p5g5"]
+=======
+[gd_scene load_steps=14 format=4 uid="uid://dif8mrk6pg6h1"]
+>>>>>>> 0dd1e8cc208d61350bbe192d984da2e87a70ca66
 
 [ext_resource type="Texture2D" uid="uid://b60uxnuskko13" path="res://_assets/sprites/Dungeon Tile Set.png" id="1_2flkv"]
 [ext_resource type="Texture2D" uid="uid://jqehw46lffxm" path="res://_assets/sprites/fondo-nivel.png" id="2_c1wv6"]
 [ext_resource type="PackedScene" uid="uid://6quo72gi5dls" path="res://src/scenes/entities/jugador_mau.tscn" id="3_x0kx7"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://c64csymrtl6td" path="res://src/scenes/entities/enemies.tscn" id="4_mutya"]
+=======
+[ext_resource type="PackedScene" uid="uid://bsf3x4iccsisb" path="res://src/scenes/entities/enemies.tscn" id="4_mutya"]
+>>>>>>> 0dd1e8cc208d61350bbe192d984da2e87a70ca66
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x0kx7"]
 texture = ExtResource("1_2flkv")
