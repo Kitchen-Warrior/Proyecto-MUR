@@ -91,6 +91,7 @@ texture = ExtResource("1_rqis1")
 5:9/0 = 0
 5:11/0 = 0
 12:9/0 = 0
+12:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:9/0 = 0
 10:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:14/0 = 0
@@ -149,5 +150,9 @@ tile_map_data = PackedByteArray("AABHACkAAAAKAAoAAABGACkAAAAKAAoAAABFACkAAAAKAAo
 tile_set = SubResource("TileSet_eyekk")
 
 [node name="jugador_mau" parent="." instance=ExtResource("4_q3ypg")]
+<<<<<<< HEAD
+position = Vector2(29, 624)
+=======
 position = Vector2(40, 625)
 scale = Vector2(0.77, 0.77)
+>>>>>>> fa43b40344a4caeacac400c8ed970acac43d4215
