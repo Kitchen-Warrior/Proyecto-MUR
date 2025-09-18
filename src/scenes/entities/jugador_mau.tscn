@@ -1,6 +1,6 @@
 [gd_scene load_steps=40 format=3 uid="uid://6quo72gi5dls"]
 
-[ext_resource type="Script" path="res://src/scripts/entities/jugador.gd" id="1_q8iaw"]
+[ext_resource type="Script" uid="uid://chkkbni6k3osb" path="res://src/scripts/entities/jugador.gd" id="1_q8iaw"]
 [ext_resource type="Texture2D" uid="uid://btawrcx7wviso" path="res://_assets/sprites/caballero/ATTACK 1.png" id="1_v1373"]
 [ext_resource type="Texture2D" uid="uid://dvyfu6mdk31wf" path="res://_assets/sprites/caballero/HURT.png" id="2_q8iaw"]
 [ext_resource type="Texture2D" uid="uid://ttupopqgqld8" path="res://_assets/sprites/caballero/IDLE.png" id="3_76s5q"]
