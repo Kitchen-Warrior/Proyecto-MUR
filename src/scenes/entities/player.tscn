@@ -236,5 +236,7 @@ position = Vector2(-6, 21)
 shape = SubResource("RectangleShape2D_qh5pu")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-6, 21)
+zoom = Vector2(2.5, 2.5)
 limit_left = -255
 limit_right = 1406
