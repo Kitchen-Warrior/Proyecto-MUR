@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2o6aadosxj61"
-path="res://.godot/imported/Image20250805201329.jpg-70778558b6c230e8a3975b13b74b5e07.ctex"
+uid="uid://baabkb4wgqi2k"
+path="res://.godot/imported/FACELESSMINIONS.png-68aa731ed2495328b31c3176c2eac0a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://_assets/Image20250805201329.jpg"
-dest_files=["res://.godot/imported/Image20250805201329.jpg-70778558b6c230e8a3975b13b74b5e07.ctex"]
+source_file="res://_assets/sprites/FACELESSMINIONS.png"
+dest_files=["res://.godot/imported/FACELESSMINIONS.png-68aa731ed2495328b31c3176c2eac0a0.ctex"]
 
 [params]
 
