@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://cfsprei2ifowt"]
+[gd_scene load_steps=14 format=4 uid="uid://ba5bfj5k24opx"]
 
 [ext_resource type="Texture2D" uid="uid://b60uxnuskko13" path="res://_assets/sprites/Dungeon Tile Set.png" id="1_rqis1"]
 [ext_resource type="Texture2D" uid="uid://ccc3agiabrgo3" path="res://_assets/sprites/marble_packed.png" id="2_q3ypg"]
@@ -77,8 +77,11 @@ sources/1 = SubResource("TileSetAtlasSource_a5lkw")
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oipry"]
 texture = ExtResource("1_rqis1")
 1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 13:10/0 = 0
 13:11/0 = 0
 6:1/0 = 0
@@ -86,7 +89,9 @@ texture = ExtResource("1_rqis1")
 5:9/0 = 0
 5:11/0 = 0
 12:9/0 = 0
+12:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:9/0 = 0
+10:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:14/0 = 0
 5:14/0 = 0
 4:14/0 = 0
@@ -110,6 +115,7 @@ texture = ExtResource("3_wkdrl")
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_fqsoq"]
+physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_oipry")
 sources/1 = SubResource("TileSetAtlasSource_uvab4")
 sources/2 = SubResource("TileSetAtlasSource_fqsoq")
@@ -140,5 +146,9 @@ tile_map_data = PackedByteArray("AABHACkAAAAKAAoAAABGACkAAAAKAAoAAABFACkAAAAKAAo
 tile_set = SubResource("TileSet_eyekk")
 
 [node name="jugador_mau" parent="." instance=ExtResource("4_q3ypg")]
+<<<<<<< HEAD
+position = Vector2(29, 624)
+=======
 position = Vector2(40, 625)
 scale = Vector2(0.77, 0.77)
+>>>>>>> fa43b40344a4caeacac400c8ed970acac43d4215

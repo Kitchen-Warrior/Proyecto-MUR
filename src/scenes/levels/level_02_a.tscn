@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=4 uid="uid://dnb22gx42ak5r"]
+[gd_scene load_steps=9 format=4 uid="uid://cwrb5hl0wkeom"]
 
 [ext_resource type="Texture2D" uid="uid://jqehw46lffxm" path="res://_assets/sprites/fondo-nivel.png" id="1_jvl86"]
 [ext_resource type="Texture2D" uid="uid://b60uxnuskko13" path="res://_assets/sprites/Dungeon Tile Set.png" id="2_bow1j"]
