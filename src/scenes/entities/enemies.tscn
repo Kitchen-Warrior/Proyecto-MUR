@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://c64csymrtl6td"]
+[gd_scene load_steps=24 format=3 uid="uid://bsf3x4iccsisb"]
 
 [ext_resource type="Texture2D" uid="uid://dl6d8siy8twnv" path="res://_assets/sprites/Skeletons_Free_Pack/Skeleton_Sword/Skeleton_Yellow/Skeleton_Without_VFX/Skeleton_01_Yellow_Idle.png" id="1_6dcoc"]
 [ext_resource type="Script" uid="uid://cchqbqwbs1im3" path="res://src/scenes/entities/enemies.gd" id="1_dkufa"]
@@ -137,7 +137,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dkufa"]
-size = Vector2(20, 40)
+size = Vector2(20, 45)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_td3tc"]
 size = Vector2(64.2484, 20)
@@ -153,12 +153,13 @@ unique_name_in_owner = true
 sprite_frames = SubResource("SpriteFrames_0egds")
 animation = &"atack"
 autoplay = "atack"
-frame_progress = 0.990296
+frame = 3
+frame_progress = 0.273395
 
 [node name="Hitbox" type="Area2D" parent="CharacterBody2D"]
 
 [node name="hitbox" type="CollisionShape2D" parent="CharacterBody2D/Hitbox"]
-position = Vector2(-3, 9)
+position = Vector2(-3, 9.5)
 shape = SubResource("RectangleShape2D_dkufa")
 
 [node name="ataques" type="Area2D" parent="."]

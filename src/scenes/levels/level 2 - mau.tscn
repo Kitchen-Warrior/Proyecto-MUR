@@ -3528,10 +3528,13 @@ tile_map_data = PackedByteArray("AAAGAB8AAAABAA4AAAAHAB8AAAABAA4AAAAIAB8AAAAEAA4
 tile_set = SubResource("TileSet_pwmhi")
 
 [node name="jugador_mau" parent="." instance=ExtResource("3_x0kx7")]
-position = Vector2(199, 609)
+position = Vector2(204, 611)
+scale = Vector2(0.667, 0.667)
 
 [node name="Enemies" parent="." instance=ExtResource("4_mutya")]
-position = Vector2(144, 591)
+position = Vector2(157, 602)
+scale = Vector2(0.667, 0.667)
 
 [node name="Enemies2" parent="." instance=ExtResource("4_mutya")]
-position = Vector2(372, 592)
+position = Vector2(358, 602)
+scale = Vector2(0.667, 0.667)
