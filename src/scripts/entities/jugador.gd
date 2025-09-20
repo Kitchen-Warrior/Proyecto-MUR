@@ -1,9 +1,21 @@
 extends CharacterBody2D
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+@onready var dash: Node2D = $dash
 
 const SPEED = 135.0
 const JUMP_VELOCITY = -250.0
+
+
+#dash
+const DASH_SPEED = 1200
+const DASH_LENGTH = .1
+
+
+#fin dash
+const NORMLA_SPEED = 300.0
+
+
 var health: int = 5
 var jump_count: int = 0
 
@@ -13,7 +25,12 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 		animated_sprite_2d.play("jump")
-		
+
+	#dash
+	if Input.is_action_just_pressed("dash"):
+		dash.start_dash(DASH_LENGTH)
+	var speed = DASH_SPEED if $dash.is_dashing() else NORMLA_SPEED
+
 
 	# Salto
 	if Input.is_action_just_pressed("JUMP") and  (is_on_floor() or jump_count == 0):
@@ -25,9 +42,9 @@ func _physics_process(delta: float) -> void:
 	# Movimiento horizontal
 	var direction := Input.get_axis("IZQUIERDA", "DERECHA")
 	if direction:
-		velocity.x = direction * SPEED
+		velocity.x = direction * speed
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, speed)
 	
 	# Animaciones
 	if Input.is_action_pressed("DERECHA") and is_on_floor():
