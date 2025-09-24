@@ -3,8 +3,9 @@ extends CharacterBody2D
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var dash: Node2D = $dash
 
-const SPEED = 135.0
-const JUMP_VELOCITY = -250.0
+const SPEED = 300.0
+const JUMP_VELOCITY = -400.0
+var health: int = 5
 
 
 #dash
