@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://ttupopqgqld8" path="res://_assets/sprites/caballero/IDLE.png" id="3_76s5q"]
 [ext_resource type="Texture2D" uid="uid://c80o4yr6dxwcl" path="res://_assets/sprites/caballero/JUMP.png" id="4_idbaw"]
 [ext_resource type="Texture2D" uid="uid://so3u85pq0uw4" path="res://_assets/sprites/caballero/RUN.png" id="5_8mwfg"]
+[ext_resource type="PackedScene" uid="uid://cro3w5h28mukl" path="res://src/scenes/powers/dash.tscn" id="7_qhlxr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3ylj1"]
 atlas = ExtResource("1_v1373")
@@ -281,3 +282,5 @@ unique_name_in_owner = true
 position = Vector2(0.5, 3.5)
 shape = SubResource("RectangleShape2D_q8iaw")
 debug_color = Color(0.81492, 0.365575, 0.48065, 0.42)
+
+[node name="dash" parent="jugador_mau" instance=ExtResource("7_qhlxr")]
