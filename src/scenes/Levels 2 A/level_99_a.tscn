@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=4 uid="uid://he8dokw370op"]
 
 [ext_resource type="Texture2D" uid="uid://b60uxnuskko13" path="res://_assets/sprites/Dungeon Tile Set.png" id="1_dhrjx"]
-[ext_resource type="PackedScene" uid="uid://bf0cwi4kx4tna" path="res://src/scenes/plataforms/square plataform.tscn" id="2_mxfxy"]
+[ext_resource type="PackedScene" uid="uid://4hjaw44ddcfx" path="res://src/scenes/plataforms/square plataform.tscn" id="2_mxfxy"]
 [ext_resource type="PackedScene" uid="uid://6quo72gi5dls" path="res://src/scenes/entities/jugador_mau.tscn" id="3_tfg8h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k6ecs"]

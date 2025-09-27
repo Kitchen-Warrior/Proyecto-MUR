@@ -1,9 +1,9 @@
-[gd_scene load_steps=11 format=4 uid="uid://dv5fug138oo3d"]
+[gd_scene load_steps=11 format=4 uid="uid://dmuk31fiumbvm"]
 
 [ext_resource type="Texture2D" uid="uid://jqehw46lffxm" path="res://_assets/sprites/fondo-nivel.png" id="1_cj12r"]
 [ext_resource type="Texture2D" uid="uid://b60uxnuskko13" path="res://_assets/sprites/Dungeon Tile Set.png" id="2_bfhi7"]
 [ext_resource type="PackedScene" uid="uid://6quo72gi5dls" path="res://src/scenes/entities/jugador_mau.tscn" id="3_fnsbn"]
-[ext_resource type="Script" uid="uid://ck4s2xq7nfaco" path="res://src/scripts/plataformas movibles laterales/spawer prueba.gd" id="4_bfhi7"]
+[ext_resource type="Script" path="res://src/scripts/plataformas movibles laterales/spawer prueba.gd" id="4_bfhi7"]
 [ext_resource type="PackedScene" uid="uid://4hjaw44ddcfx" path="res://src/scenes/plataforms/square plataform.tscn" id="5_fnsbn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6d6uh"]
