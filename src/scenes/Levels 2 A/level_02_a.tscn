@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=4 uid="uid://bq7w4oj5xwtdi"]
 
-[ext_resource type="Texture2D" uid="uid://jqehw46lffxm" path="res://_assets/sprites/fondo-nivel.png" id="1_jvl86"]
-[ext_resource type="Texture2D" uid="uid://b60uxnuskko13" path="res://_assets/sprites/Dungeon Tile Set.png" id="2_bow1j"]
-[ext_resource type="PackedScene" uid="uid://6quo72gi5dls" path="res://src/scenes/entities/jugador_mau.tscn" id="3_bow1j"]
+[ext_resource type="Texture2D" uid="uid://jqehw46lffxm" path="res://_assets/sprites/fondo-nivel.png" id="1_mfffb"]
+[ext_resource type="Texture2D" uid="uid://b60uxnuskko13" path="res://_assets/sprites/Dungeon Tile Set.png" id="2_p5ddn"]
+[ext_resource type="PackedScene" uid="uid://6quo72gi5dls" path="res://src/scenes/entities/jugador_mau.tscn" id="3_7436w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6d6uh"]
-texture = ExtResource("1_jvl86")
+texture = ExtResource("1_mfffb")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -2888,7 +2888,7 @@ texture = ExtResource("1_jvl86")
 71:39/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jvl86"]
-texture = ExtResource("2_bow1j")
+texture = ExtResource("2_p5ddn")
 1:1/0 = 0
 2:1/0 = 0
 3:1/0 = 0
@@ -3029,7 +3029,7 @@ sources/0 = SubResource("TileSetAtlasSource_6d6uh")
 sources/1 = SubResource("TileSetAtlasSource_jvl86")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aoe7f"]
-texture = ExtResource("2_bow1j")
+texture = ExtResource("2_p5ddn")
 1:1/0 = 0
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:1/0 = 0
@@ -3207,6 +3207,6 @@ tile_set = SubResource("TileSet_nit7b")
 
 [node name="ForeGround" type="TileMapLayer" parent="."]
 
-[node name="jugador_mau" parent="." instance=ExtResource("3_bow1j")]
+[node name="jugador_mau" parent="." instance=ExtResource("3_7436w")]
 position = Vector2(42, 1023)
 scale = Vector2(0.667, 0.667)
