@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://6quo72gi5dls"]
+[gd_scene load_steps=42 format=3 uid="uid://c4kjwqegu7r18"]
 
 [ext_resource type="Script" uid="uid://chkkbni6k3osb" path="res://src/scripts/entities/jugador.gd" id="1_q8iaw"]
 [ext_resource type="Texture2D" uid="uid://btawrcx7wviso" path="res://_assets/sprites/caballero/ATTACK 1.png" id="1_v1373"]
@@ -149,9 +149,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ugj35")
 }],
-"loop": true,
+"loop": false,
 "name": &"atack",
-"speed": 10.0
+"speed": 16.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -250,7 +250,11 @@ animations = [{
 size = Vector2(9, 43)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q8iaw"]
-size = Vector2(10, 49.375)
+size = Vector2(10, 37)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qhlxr"]
+radius = 13.0455
+height = 36.027
 
 [node name="jugador_mau" type="Node2D"]
 
@@ -262,8 +266,10 @@ script = ExtResource("1_q8iaw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="jugador_mau"]
 sprite_frames = SubResource("SpriteFrames_5i2i3")
-animation = &"jump"
+animation = &"atack"
 autoplay = "idle"
+frame = 5
+frame_progress = 1.0
 
 [node name="Camera2D" type="Camera2D" parent="jugador_mau"]
 zoom = Vector2(3, 3)
@@ -277,10 +283,22 @@ unique_name_in_owner = true
 collision_layer = 193
 collision_mask = 64
 
-[node name="Hurtcol" type="CollisionShape2D" parent="jugador_mau/HurtBox"]
+[node name="Hurtbox" type="CollisionShape2D" parent="jugador_mau/HurtBox"]
 unique_name_in_owner = true
-position = Vector2(0, -8)
+position = Vector2(-1, -5)
 shape = SubResource("RectangleShape2D_q8iaw")
 debug_color = Color(0.81492, 0.365575, 0.48065, 0.42)
 
 [node name="dash" parent="jugador_mau" instance=ExtResource("7_qhlxr")]
+
+[node name="Area2D" type="Area2D" parent="jugador_mau"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="jugador_mau/Area2D"]
+position = Vector2(9, 6)
+rotation = 1.55509
+shape = SubResource("CapsuleShape2D_qhlxr")
+disabled = true
+one_way_collision_margin = 0.0
+
+[connection signal="animation_finished" from="jugador_mau/AnimatedSprite2D" to="jugador_mau" method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="body_entered" from="jugador_mau/Area2D" to="jugador_mau" method="_on_area_2d_body_entered"]

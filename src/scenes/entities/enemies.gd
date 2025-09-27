@@ -56,3 +56,7 @@ func check_damage():
 				body.take_damage()
 				last_damage_time = current_time
 				print("Daño continuo aplicado")
+
+
+func _on_hitbox_child_entered_tree(node: Node) -> void:
+	pass # Replace with function body.
