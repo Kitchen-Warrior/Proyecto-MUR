@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://6quo72gi5dls"]
+[gd_scene load_steps=41 format=3 uid="uid://c4kjwqegu7r18"]
 
 [ext_resource type="Script" uid="uid://chkkbni6k3osb" path="res://src/scripts/entities/jugador.gd" id="1_q8iaw"]
 [ext_resource type="Texture2D" uid="uid://btawrcx7wviso" path="res://_assets/sprites/caballero/ATTACK 1.png" id="1_v1373"]
