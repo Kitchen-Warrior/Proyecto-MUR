@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://c64csymrtl6td"]
+[gd_scene load_steps=24 format=3 uid="uid://bsf3x4iccsisb"]
 
 [ext_resource type="Texture2D" uid="uid://dl6d8siy8twnv" path="res://_assets/sprites/Skeletons_Free_Pack/Skeleton_Sword/Skeleton_Yellow/Skeleton_Without_VFX/Skeleton_01_Yellow_Idle.png" id="1_6dcoc"]
 [ext_resource type="Script" uid="uid://cchqbqwbs1im3" path="res://src/scenes/entities/enemies.gd" id="1_dkufa"]
