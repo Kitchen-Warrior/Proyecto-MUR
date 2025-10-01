@@ -3191,7 +3191,7 @@ physics_layer_0/collision_layer = 3
 physics_layer_0/collision_mask = 3
 sources/0 = SubResource("TileSetAtlasSource_aoe7f")
 
-[node name="level_02_A2" type="Node2D"]
+[node name="level_02_A" type="Node2D"]
 
 [node name="TileMapsLayers" type="Node2D" parent="."]
 
