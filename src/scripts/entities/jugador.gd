@@ -1,9 +1,9 @@
 extends CharacterBody2D
-
+const dash = preload("res://src/scenes/powers/dash.tscn")
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
 
-
+const SPEED = 125
 #dash
 const DASH_SPEED = 1200
 const DASH_LENGTH = .1
