@@ -6,8 +6,8 @@ extends CharacterBody2D
 # Constantes
 const DASH_SPEED = 1200.0
 const DASH_LENGTH = 0.1
-const NORMAL_SPEED = 125.0
-const JUMP_VELOCITY = -400.0
+const NORMAL_SPEED = 135.0
+const JUMP_VELOCITY = -265.0
 
 # Variables
 var health: int = 5
