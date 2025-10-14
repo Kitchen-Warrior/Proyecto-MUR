@@ -1,7 +1,7 @@
 [gd_scene load_steps=24 format=3 uid="uid://bsf3x4iccsisb"]
 
 [ext_resource type="Texture2D" uid="uid://dl6d8siy8twnv" path="res://_assets/sprites/Skeletons_Free_Pack/Skeleton_Sword/Skeleton_Yellow/Skeleton_Without_VFX/Skeleton_01_Yellow_Idle.png" id="1_6dcoc"]
-[ext_resource type="Script" uid="uid://cchqbqwbs1im3" path="res://src/scenes/entities/enemies.gd" id="1_dkufa"]
+[ext_resource type="Script" path="res://src/scripts/entities/enemies.gd" id="1_dkufa"]
 [ext_resource type="Texture2D" uid="uid://cddgvxhmi4tm4" path="res://_assets/sprites/Skeletons_Free_Pack/Skeleton_Sword/Skeleton_Yellow/Skeleton_With_VFX/Skeleton_01_Yellow_Attack2.png" id="2_td3tc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0egds"]
