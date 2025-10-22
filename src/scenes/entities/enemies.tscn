@@ -1,8 +1,13 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=24 format=3 uid="uid://c64csymrtl6td"]
+=======
+[gd_scene load_steps=36 format=3 uid="uid://c64csymrtl6td"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Texture2D" uid="uid://dl6d8siy8twnv" path="res://_assets/sprites/Skeletons_Free_Pack/Skeleton_Sword/Skeleton_Yellow/Skeleton_Without_VFX/Skeleton_01_Yellow_Idle.png" id="1_6dcoc"]
 [ext_resource type="Script" uid="uid://cchqbqwbs1im3" path="res://src/scenes/entities/enemies.gd" id="1_dkufa"]
 [ext_resource type="Texture2D" uid="uid://cddgvxhmi4tm4" path="res://_assets/sprites/Skeletons_Free_Pack/Skeleton_Sword/Skeleton_Yellow/Skeleton_With_VFX/Skeleton_01_Yellow_Attack2.png" id="2_td3tc"]
+[ext_resource type="Texture2D" uid="uid://ddurblpoj6skh" path="res://_assets/sprites/Skeletons_Free_Pack/Skeleton_Sword/Skeleton_Yellow/Skeleton_Without_VFX/Skeleton_01_Yellow_Walk.png" id="4_1unmw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0egds"]
 atlas = ExtResource("2_td3tc")
@@ -72,6 +77,46 @@ region = Rect2(576, 0, 96, 64)
 atlas = ExtResource("1_6dcoc")
 region = Rect2(672, 0, 96, 64)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_wr2xf"]
+atlas = ExtResource("4_1unmw")
+region = Rect2(0, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s1n8i"]
+atlas = ExtResource("4_1unmw")
+region = Rect2(96, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n6t4r"]
+atlas = ExtResource("4_1unmw")
+region = Rect2(192, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2sacx"]
+atlas = ExtResource("4_1unmw")
+region = Rect2(288, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nh6hy"]
+atlas = ExtResource("4_1unmw")
+region = Rect2(384, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f0u2u"]
+atlas = ExtResource("4_1unmw")
+region = Rect2(480, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tg84y"]
+atlas = ExtResource("4_1unmw")
+region = Rect2(576, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dkyrs"]
+atlas = ExtResource("4_1unmw")
+region = Rect2(672, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0s4hh"]
+atlas = ExtResource("4_1unmw")
+region = Rect2(768, 0, 96, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b8ndn"]
+atlas = ExtResource("4_1unmw")
+region = Rect2(864, 0, 96, 64)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_0egds"]
 animations = [{
 "frames": [{
@@ -104,7 +149,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"atack",
-"speed": 2.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -134,6 +179,41 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wr2xf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s1n8i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n6t4r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2sacx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nh6hy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f0u2u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tg84y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dkyrs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0s4hh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b8ndn")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dkufa"]
@@ -141,6 +221,9 @@ size = Vector2(20, 40)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_td3tc"]
 size = Vector2(64.2484, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1unmw"]
+size = Vector2(156, 51.5)
 
 [node name="Enemies" type="Node2D"]
 script = ExtResource("1_dkufa")
@@ -151,9 +234,15 @@ collision_mask = 65
 [node name="sprites_enemies" type="AnimatedSprite2D" parent="CharacterBody2D"]
 unique_name_in_owner = true
 sprite_frames = SubResource("SpriteFrames_0egds")
+<<<<<<< Updated upstream
 animation = &"atack"
 autoplay = "atack"
 frame_progress = 0.990296
+=======
+animation = &"walk"
+autoplay = "idle"
+frame_progress = 0.221459
+>>>>>>> Stashed changes
 
 [node name="Hitbox" type="Area2D" parent="CharacterBody2D"]
 
@@ -169,6 +258,14 @@ scale = Vector2(0.747101, 0.71302)
 shape = SubResource("RectangleShape2D_td3tc")
 debug_color = Color(0.975626, 0, 0.417996, 0.42)
 
+[node name="atackbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="atackbox"]
+position = Vector2(-1, 6)
+shape = SubResource("RectangleShape2D_1unmw")
+
 [connection signal="body_entered" from="CharacterBody2D/Hitbox" to="." method="_on_hitbox_body_entered"]
 [connection signal="child_entered_tree" from="CharacterBody2D/Hitbox/hitbox" to="." method="_on_hitbox_child_entered_tree"]
 [connection signal="body_entered" from="ataques" to="." method="_on_ataques_body_entered"]
+[connection signal="body_entered" from="atackbox" to="." method="_on_arackbox_body_entered"]
+[connection signal="body_exited" from="atackbox" to="." method="_on_atackbox_body_exited"]
